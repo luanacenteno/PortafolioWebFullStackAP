@@ -19,28 +19,83 @@
         <h1>HI THERE! I'M</h1>
         <h2 class="animate__heartBeat animate__repeat-3" ><a (click)="scrollCustomImplementation(sec2, 2)"><strong >LUANA</strong></a></h2>
         <h4>{{stringInterpolation}}</h4>
-        <!--<span typingAnimation [typeSpeed]="20" [startDelay]="2000" (complete)="onComplete()">
-            Full Stack Web Developer
-        </span>-->
-        
     </div> 
 </section> 
  
 
-<section #sec2 id="section2" [ngClass]="{'active': activeUIIndex === 2}">
-   <div class="sect2">
-    <h1>Hello!</h1>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus mollitia quidem similique nam obcaecati repellat sapiente quam necessitatibus nihil nulla, omnis eaque reprehenderit numquam aspernatur deleniti quos. Ratione, illum iure!</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem pariatur fugit adipisci impedit dignissimos necessitatibus illum similique. Facere id repellat distinctio deleniti voluptatum at impedit laboriosam necessitatibus maxime excepturi. Expedita?</p>
-    <h4>cfmjesdiuncwieop</h4>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus mollitia quidem similique nam obcaecati repellat sapiente quam necessitatibus nihil nulla, omnis eaque reprehenderit numquam aspernatur deleniti quos. Ratione, illum iure!</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem pariatur fugit adipisci impedit dignissimos necessitatibus illum similique. Facere id repellat distinctio deleniti voluptatum at impedit laboriosam necessitatibus maxime excepturi. Expedita?</p>
-    <h4>cfmjesdiuncwieop</h4>
-   </div>
+<section #sec2 id="section2" [ngClass]="{'d-none': !section2}">
+    <div class="col-6 ">
+        <div class="description">
+          <h1>Full Stack Web Developer Junior</h1>
+          <h2>Luana Dayana Centeno</h2>
+          <span>22 años / Córdoba, Argentina</span><br>
+          <ul>Lenguajes:
+            <li> Javascript | SQL | PHP </li>
+            <li> Front-End : Angular | Bootstrap | CSS |</li> 
+            <li> Back-End : Node.js | Express | Java </li>
+            <li> DataBase: SEQUELIZE | PostgreSQL </li>
+          </ul>  
+         <span> Deseo crecer profesionalmente en un entorno de trabajo colaborativo, donde poder intercambiar opiniones y experiencias. </span>
+        </div>
+    </div>
 </section>
 
-<section id="section3" [ngClass]="{'active': activeUIIndex === 3}"> 
+<section id="section3"  [ngClass]="{'d-none': !section3}"> 
+    <div class="timeline">
+        <ul>
+          <li>
+            <div class="timeline-content">
+              <h2 class="date"> <strong>Marzo 2012 - Noviembre 2017 </strong> </h2>
+              <h3>Secundario Juan XXIII - Bachiller en ciencias económicas</h3>
+              <p>Pico Truncado, Santa Cruz, Argentina</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h2 class="date"> <strong>Febrero 2018 - Agosto 2021</strong> </h2>
+              <h3>Facultad de Odontología UNC</h3>
+              <p>Córdoba, Argentina</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h2 class="date"> <strong>Abril 2021 - Junio 2021</strong> </h2>
+              <h3>Udemy - Master en PHP, SQL, POO, MVC</h3>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h2 class="date"> <strong>Agosto - Octubre 2021</strong> </h2>
+              <h3>Argentina Programa #SeProgramar</h3>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h2 class="date"> <strong>Noviembre 2021 - Mayo 2022</strong> </h2>
+              <h3>Argentina Programa #YoProgramo</h3>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+             <h2 class="date"> <strong>Marzo 2022 - En Curso</strong> </h2>
+              <h3>Tecnicatura en Web Developer ISSD</h3>
+              <p>Córdoba, Argentina</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+</section>
 
+<section id="section4"  [ngClass]="{'d-none': !section4}"> 
+    <div id="skills" class="d-flex flex-wrap" >
+        <div class="box" *ngFor='let skill of skills'>
+          <div class="circles" data-dots="100" data-percent="90"></div>
+          <div class="text">
+            <h2>{{skill.value}}%</h2>
+            <small>{{skill.name}}</small>
+          </div>
+        </div>
+    </div>
 </section>
 
 <footer></footer>
