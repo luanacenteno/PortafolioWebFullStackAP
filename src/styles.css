@@ -1,15 +1,16 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
-
+a {
+    cursor:pointer
+}
 #section2{
     height: 100%;
 }
 .sect2 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  height: 99%;
-  margin: 5px;
+  height: 100vh;
   background: yellow;
 }
 
@@ -56,7 +57,7 @@
         text-decoration: none;
     }
     .info strong{
-        color: rgb(217, 255, 0);
+        color: yellow;
     }
     .info h4{
         font-size: 22px;

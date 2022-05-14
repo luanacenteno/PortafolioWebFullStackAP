@@ -15,10 +15,14 @@
     <div class="lol animate__animated animate__slideInRight">
         <img class="imagen" src="../assets/img/image-profile.png" >
     </div>
-    <div class="info">
+    <div class="info" style="z-index: 2;">
         <h1>HI THERE! I'M</h1>
-        <h2 class="animate__heartBeat animate__repeat-3"><a (click)="scrollCustomImplementation(sec2, 2)"><strong>LUANA</strong></a></h2>
-        <h4>Full Stack Web Developer</h4>
+        <h2 class="animate__heartBeat animate__repeat-3" ><a (click)="scrollCustomImplementation(sec2, 2)"><strong >LUANA</strong></a></h2>
+        <h4>{{stringInterpolation}}</h4>
+        <!--<span typingAnimation [typeSpeed]="20" [startDelay]="2000" (complete)="onComplete()">
+            Full Stack Web Developer
+        </span>-->
+        
     </div> 
 </section> 
  

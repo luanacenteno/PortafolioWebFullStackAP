@@ -15,7 +15,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgxPageScrollCoreModule.forRoot( { duration: 500 } )
+    NgxPageScrollCoreModule.forRoot( { duration: 500 } ),
   ],
   providers: [],
   bootstrap: [AppComponent]
